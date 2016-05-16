@@ -1,0 +1,21 @@
+#MyEclipse Hibernate Properties
+#Thu Jan 14 14:55:11 CST 2016
+genBasicCompId=false
+sessionFactoryName=com.lyz.sessionFactory.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/ArtisticExamination/src/hibernate.cfg.xml
+createConfigFile=true
+baseDaoClass=com.artistic_exam.ExaminationInfor_Inside.BaseHibernateDAO

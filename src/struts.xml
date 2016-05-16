@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- <constant name="struts.multipart.maxSize" value="524288000"></constant> -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.action.extension" value="action"></constant>
+	<package name="artistic_exam" extends="struts-default">
+		<action name="insertWorker" class="com.artistic_exam.ActionForm.InsertWorkersAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=worker/insertworkers.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=worker/insertworkers.jsp
+			</result>
+		</action>
+
+		<action name="uploadQuesions"
+			class="com.artistic_exam.ActionForm.InsertQuestionBankAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=questionbank/uploadquestionbank.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=questionbank/uploadquestionbank.jsp
+			</result>
+		</action>
+		
+		<action name="addConstant"
+			class="com.artistic_exam.ActionForm.AddConstantAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=constant/addconstant.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=constant/addconstant.jsp
+			</result>
+		</action>
+
+		<action name="updateConstant"
+			class="com.artistic_exam.ActionForm.UpdateConstantAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=constant/updateconstant.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=constant/updateconstant.jsp
+			</result>
+		</action>
+		
+		<action name="deleteConstant"
+			class="com.artistic_exam.ActionForm.DeleteConstantAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=constant/deleteconstant.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=constant/deleteconstant.jsp
+			</result>
+		</action>
+
+		<action name="deleteWorker" class="com.artistic_exam.ActionForm.DeleteWorkersAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=worker/deleteworkers.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=worker/deleteworkers.jsp
+			</result>
+		</action>
+		
+		<action name="addRegNum" class="com.artistic_exam.ActionForm.AddRegNumAction">
+			<result name="success" type="dispatcher">
+				/result_success.jsp?url=outside/insertregnum.jsp
+			</result>
+			<result name="fail" type="dispatcher">
+				/result_fail.jsp?url=outside/insertregnum.jsp
+			</result>
+		</action>
+	</package>
+</struts>    
